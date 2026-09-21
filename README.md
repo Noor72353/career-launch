@@ -1,78 +1,102 @@
-\# Career Launch
+# Career Launch
 
+A structured learning and practice repository for building strong foundations in Python, Data Structures & Algorithms, Computer Vision, SQL, Git, and software development.
 
+## Week 1 - Day 1
 
-A structured learning and practice repository for building strong foundations in Python, Data Structures \& Algorithms, Computer Vision, SQL, Git, and software development.
-
-
-
-\## Week 1 - Day 1
-
-
-
-\### Python Environments
-
-
+### Python Environments
 
 Created three separate Python virtual environments:
 
-
-
-\- `dsa` - Data Structures \& Algorithms practice
-
-\- `cv` - Computer Vision practice
-
-\- `sql` - SQL learning and practice
-
-
+* `dsa` - Data Structures & Algorithms practice
+* `cv` - Computer Vision practice
+* `sql` - SQL learning and practice
 
 Each environment uses Python 3.13.
 
-
-
-\### Development Tools
-
-
+### Development Tools
 
 Installed and tested:
 
+* pytest - testing
+* black - code formatting
+* flake8 - code linting
 
-
-\- pytest - testing
-
-\- black - code formatting
-
-\- flake8 - code linting
-
-
-
-\### Project Structure
-
-
+### Project Structure
 
 ```text
-
 career-launch/
-
 ├── dsa/
-
 │   ├── hello.py
-
-│   └── test\_hello.py
-
+│   ├── test_hello.py
+│   ├── two_sum.py
+│   └── stock.py
 ├── cv/
-
 │   ├── hello.py
-
-│   └── test\_hello.py
-
+│   └── test_hello.py
 ├── sql/
-
 │   ├── hello.py
-
-│   └── test\_hello.py
-
+│   └── test_hello.py
 ├── .gitignore
-
 └── README.md
+```
+
+> Each folder has its own local `.venv` virtual environment, which is excluded from Git using `.gitignore`.
+
+### DSA Practice
+
+Two foundational DSA problems were implemented and tested:
+
+#### 1. Two Sum
+
+* Uses a hash map/dictionary
+* Time complexity: O(n)
+* Space complexity: O(n)
+
+#### 2. Best Time to Buy and Sell Stock
+
+* Uses a single-pass approach
+* Tracks the minimum price seen so far
+* Time complexity: O(n)
+* Space complexity: O(1)
+
+### Testing
+
+All practice environments were tested using pytest.
+
+Current tests:
+
+* DSA: 1 passed
+* CV: 1 passed
+* SQL: 1 passed
+
+The DSA solutions were also tested with multiple example inputs.
+
+## Goals
+
+* Strengthen Python fundamentals
+* Practice Data Structures & Algorithms
+* Learn Computer Vision concepts
+* Build SQL skills
+* Improve Git and GitHub workflow
+* Build a consistent software development practice
+* Develop practical problem-solving skills
+
+## Progress
+
+* [x] Python virtual environments
+* [x] pytest setup
+* [x] Black setup
+* [x] Flake8 setup
+* [x] Git repository
+* [x] First Git commit
+* [x] GitHub repository
+* [x] First GitHub push
+* [x] README documentation
+* [x] Two Sum
+* [x] Best Time to Buy and Sell Stock
+
+## Week 1 Status
+
+**Day 1 - Completed ✅**
 
