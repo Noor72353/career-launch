@@ -97,18 +97,21 @@ The DSA solutions were also tested with multiple example inputs.
 * [x] Best Time to Buy and Sell Stock
 
 
-**Day 1 - Completed ✅**
-----------------------------------------------------------------------------
+## **Day 1 - Completed ✅**
 
-Day 2 Starts:
+---
 
-## OOP Notes
+## **Day 2 - OOP Practice**
 
-- Inheritance represents an **IS-A** relationship where a child class reuses or extends a parent class.
-- Composition represents a **HAS-A** relationship where one class contains or uses objects of another class.
-- Use inheritance for specialized versions of a class, while composition is useful when a class needs to use other objects as components.
+### OOP Notes
 
+* Inheritance represents an **IS-A** relationship where a child class reuses or extends a parent class.
+* Composition represents a **HAS-A** relationship where one class contains or uses objects of another class.
+* Use inheritance for specialized versions of a class, while composition is useful when a class needs to use other objects as components.
 
+### Project Structure
+
+```text
 career-launch/
 ├── dsa/
 │   ├── hello.py
@@ -123,4 +126,9 @@ career-launch/
 ├── sql/
 ├── .gitignore
 └── README.md
+```
+
+## **Day 2 - Completed ✅**
+
+---
 
