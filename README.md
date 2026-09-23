@@ -132,3 +132,37 @@ career-launch/
 
 ---
 
+## **Day 3 - Advanced Python & DSA**
+
+### Advanced Python
+
+- Decorators
+- Generators
+- Context Managers
+- Added docstrings to the examples
+- Used Black for code formatting
+- Used Flake8 for code quality checking
+
+### DSA Practice
+
+#### 1. Group Anagrams
+
+- Groups words that are anagrams of each other
+- Uses sorted words as grouping keys
+- Uses a dictionary to store anagram groups
+
+#### 2. Top K Frequent Elements
+
+- Uses `Counter` to count element frequencies
+- Uses `most_common(k)` to find the most frequent elements
+
+### Files Created
+
+- `advanced_python.py`
+- `group_anagrams.py`
+- `top_k_frequent.py`
+
+## **Day 3 - Completed ✅**
+
+---
+
