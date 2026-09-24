@@ -288,3 +288,126 @@ career-launch/
 
 ---
 
+## **Day 6 - Packaging + PyInstaller**
+
+### Packaging & CLI Tool
+
+* Converted `utils.py` into a command-line interface (CLI) tool using Python's `argparse`
+* Added three CLI operations:
+
+  * `even` — checks whether a number is even
+  * `square` — calculates the square of a number
+  * `reverse` — reverses a string
+* Added `pyproject.toml` for Python project packaging
+* Configured `setuptools` to package only the `utils.py` module
+* Added the `career-utils` command-line entry point
+* Installed the project in editable mode
+* Tested the CLI successfully using `career-utils`
+
+### CLI Examples
+
+```powershell
+career-utils even 10
+career-utils square 7
+career-utils reverse hello
+```
+
+Example output:
+
+```text
+True
+49
+olleh
+```
+
+### PyInstaller
+
+* Installed PyInstaller 6.22.3
+* Built a standalone Windows executable using PyInstaller
+* Used the `--onefile` option to create a single executable
+* Successfully generated `utils.exe`
+* Tested the standalone executable successfully
+
+### Build Command
+
+From the `dsa` directory:
+
+```powershell
+pyinstaller --onefile utils.py
+```
+
+The executable is generated in:
+
+```text
+dsa/dist/utils.exe
+```
+
+### Running the Standalone Executable
+
+```powershell
+.\dist\utils.exe even 10
+.\dist\utils.exe square 7
+.\dist\utils.exe reverse hello
+```
+
+Example output:
+
+```text
+True
+49
+olleh
+```
+
+### Git Configuration
+
+Added PyInstaller-generated files and directories to `.gitignore`:
+
+```gitignore
+# PyInstaller
+build/
+dist/
+*.spec
+```
+
+This prevents generated build files from being committed to the repository.
+
+### DSA Practice
+
+#### Longest Substring Without Repeating Characters
+
+* Implemented `length_of_longest_substring()`
+* Used the sliding-window technique
+* Used a set to track characters currently in the window
+* Handles repeated characters
+* Handles empty strings
+* Time complexity: O(n)
+* Space complexity: O(n)
+
+### Testing
+
+* Added 5 tests for Longest Substring Without Repeating Characters
+* Full test suite: **56/56 tests passed**
+* Overall test coverage: **83%**
+* Coverage target: **80%+**
+* Used `pytest-cov` to measure coverage
+
+### Code Quality
+
+* Ran Black successfully
+* Ran Flake8 successfully
+* Excluded `.venv` from Flake8 because it contains third-party packages
+* Fixed the line-length issue in `longest_substring.py`
+
+### Day 6 Files
+
+* `dsa/utils.py`
+* `dsa/pyproject.toml`
+* `dsa/longest_substring.py`
+* `dsa/test_longest_substring.py`
+* `dsa/.gitignore`
+
+## **Day 6 - Completed ✅**
+
+---
+
+
