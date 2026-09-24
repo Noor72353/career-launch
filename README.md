@@ -1,5 +1,10 @@
 # Career Launch
 
+[![Python](https://img.shields.io/badge/Python-3.13-blue)](https://www.python.org/)
+[![Tests](https://img.shields.io/badge/Tests-pytest-green)](https://pytest.org/)
+[![Code Style](https://img.shields.io/badge/Code%20Style-Black-black)](https://black.readthedocs.io/)
+[![Linting](https://img.shields.io/badge/Linting-Flake8-blue)](https://flake8.pycqa.org/)
+
 A structured learning and practice repository for building strong foundations in Python, Data Structures & Algorithms, Computer Vision, SQL, Git, and software development.
 
 ## Week 1 - Day 1
@@ -163,6 +168,64 @@ career-launch/
 - `top_k_frequent.py`
 
 ## **Day 3 - Completed ✅**
+
+---
+
+## **Day 4 - Git, GitHub Workflow & DSA**
+
+### Git & GitHub Workflow
+
+- Created and worked on the `feature/utils` branch
+- Added reusable utility functions in `dsa/utils.py`
+- Added pytest tests in `dsa/test_utils.py`
+- Updated `.gitignore` using a Python-focused template
+- Committed changes with a clear Git commit message
+- Pushed the feature branch to GitHub
+- Created and self-reviewed a Pull Request
+- Merged the Pull Request into `main`
+- Deleted the local and remote feature branch after merging
+
+### DSA Practice
+
+#### 1. Product of Array Except Self
+
+- Uses prefix and suffix products
+- Does not use division
+- Time complexity: O(n)
+- Handles arrays containing zero
+
+#### 2. Longest Consecutive Sequence
+
+- Uses a set for fast lookups
+- Starts counting only from the beginning of a sequence
+- Time complexity: O(n)
+- Handles duplicate values
+
+### Testing & Code Quality
+
+- Added pytest tests for both DSA problems
+- All tests passed
+- Used Black for code formatting
+- Used Flake8 for code quality checking
+
+### Documentation
+
+- Added `CONTRIBUTING.md`
+- Updated project documentation
+- Added project badges
+
+### Day 4 Files
+
+- `dsa/utils.py`
+- `dsa/test_utils.py`
+- `dsa/product_of_array_except_self.py`
+- `dsa/test_product_of_array_except_self.py`
+- `dsa/longest_consecutive.py`
+- `dsa/test_longest_consecutive.py`
+- `.gitignore`
+- `CONTRIBUTING.md`
+
+## **Day 4 - Completed ✅**
 
 ---
 
