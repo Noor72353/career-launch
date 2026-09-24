@@ -4,6 +4,7 @@
 [![Tests](https://img.shields.io/badge/Tests-pytest-green)](https://pytest.org/)
 [![Code Style](https://img.shields.io/badge/Code%20Style-Black-black)](https://black.readthedocs.io/)
 [![Linting](https://img.shields.io/badge/Linting-Flake8-blue)](https://flake8.pycqa.org/)
+[![Coverage](https://img.shields.io/badge/Coverage-85%25-green)](https://pytest-cov.readthedocs.io/)
 
 A structured learning and practice repository for building strong foundations in Python, Data Structures & Algorithms, Computer Vision, SQL, Git, and software development.
 
@@ -226,6 +227,64 @@ career-launch/
 - `CONTRIBUTING.md`
 
 ## **Day 4 - Completed ✅**
+
+---
+
+## **Day 5 - Testing with pytest**
+
+### Testing with pytest
+
+- Expanded unit tests for `BankAccount`, `SavingsAccount`, and `CurrentAccount`
+- Added tests for utility functions in `utils.py`
+- Covered happy paths and edge cases
+- Tested invalid inputs and printed error messages using `capsys`
+- Added tests for existing DSA solutions
+- Added tests for 3Sum and Container With Most Water
+
+### DSA Practice
+
+#### 1. 3Sum
+
+- Finds unique triplets that sum to zero
+- Uses sorting and the two-pointer technique
+- Handles duplicate values
+- Time complexity: O(n²)
+
+#### 2. Container With Most Water
+
+- Finds the maximum amount of water a container can hold
+- Uses the two-pointer technique
+- Time complexity: O(n)
+- Uses constant extra space
+
+### Test Coverage
+
+- Full test suite: **51/51 tests passed**
+- Overall test coverage: **85%**
+- Coverage target: **80%+**
+- Used `pytest-cov` to measure coverage
+
+### Code Quality
+
+- Ran Black successfully
+- Ran Flake8 successfully
+- Excluded `.venv` from Flake8 because it contains third-party packages
+
+### Day 5 Files
+
+- `dsa/test_oop_basics.py`
+- `dsa/test_utils.py`
+- `dsa/test_two_sum.py`
+- `dsa/test_contains_duplicate.py`
+- `dsa/test_valid_anagram.py`
+- `dsa/test_group_anagrams.py`
+- `dsa/test_top_k_frequent.py`
+- `dsa/three_sum.py`
+- `dsa/test_three_sum.py`
+- `dsa/container_with_most_water.py`
+- `dsa/test_container_with_most_water.py`
+
+## **Day 5 - Completed ✅**
 
 ---
 
