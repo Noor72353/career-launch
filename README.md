@@ -410,4 +410,64 @@ This prevents generated build files from being committed to the repository.
 
 ---
 
+# 🗓️ WEEK 2 — SQL, DBMS + CI + Consolidation
+
+## **Day 8 - SQL Fundamentals**
+
+### SQL Fundamentals
+
+- Completed SQLBolt Lessons 1–6
+- Practiced `SELECT`, `WHERE`, `LIKE`, `ORDER BY`, `LIMIT`, `BETWEEN`, and `OR`
+- Reviewed basic SQL filtering and sorting
+
+### SQLite Database
+
+- Created a SQLite database named `practice.db`
+- Created three tables:
+  - `users`
+  - `products`
+  - `orders`
+- Added primary keys and foreign key relationships
+- Added sample data using `seed.sql`
+
+### SQL Queries
+
+- Created `queries.sql` containing 15 documented SQL queries
+- Practiced:
+  - `SELECT`
+  - `WHERE`
+  - `LIKE`
+  - `BETWEEN`
+  - `ORDER BY ASC`
+  - `ORDER BY DESC`
+  - `LIMIT`
+  - `OR`
+
+### Database Verification
+
+- Verified all three tables successfully
+- `users`: 6 records
+- `products`: 7 records
+- `orders`: 10 records
+- Successfully executed all 15 queries
+
+### LeetCode SQL Practice
+
+Completed:
+
+- Problem 595 — Big Countries
+- Problem 584 — Find Customer Referee
+- Problem 183 — Customers Who Never Order
+
+### Day 8 Files
+
+- `sql/day8/practice.db`
+- `sql/day8/schema.sql`
+- `sql/day8/seed.sql`
+- `sql/day8/queries.sql`
+
+## **Day 8 - Completed ✅**
+
+---
+
 
