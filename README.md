@@ -470,4 +470,49 @@ Completed:
 
 ---
 
+## **Day 9 - Joins & Aggregations**
+
+### SQLBolt Lessons
+- Completed SQLBolt Lessons 7–12
+- Practiced JOINs, aggregate functions, GROUP BY, HAVING, and NULL handling
+
+### JOINs & Aggregations
+- Created 16 additional SQL queries
+- Practiced INNER JOIN
+- Practiced LEFT JOIN
+- Practiced RIGHT JOIN
+- Practiced COUNT(), SUM(), and AVG()
+- Practiced GROUP BY and HAVING
+- Practiced subqueries
+- Added a query to find the top 3 customers by total spend
+
+### Top 3 Customers by Total Spend
+
+- Ali Khan: 145,000
+- Ayesha Noor: 35,000
+- Sara Ahmed: 18,000
+
+### LeetCode SQL Practice
+
+Completed:
+- Problem 175 — Combine Two Tables
+- Problem 176 — Second Highest Salary
+- Problem 181 — Employees Earning More Than Their Managers
+
+### SQL Documentation
+
+- Added `README_sql.md` explaining the database schema and relationships
+- Continued using `practice.db` with 6 users, 7 products, and 10 orders
+- Total SQL practice queries across Day 8 and Day 9: **31**
+
+### Day 9 Files
+
+- `sql/day9/practice.db`
+- `sql/day9/queries.sql`
+- `sql/day9/README_sql.md`
+
+## **Day 9 - Completed ✅**
+
+---
+
 
