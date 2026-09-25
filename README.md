@@ -515,4 +515,59 @@ Completed:
 
 ---
 
+## **Day 10 - Advanced SQL + Python Integration**
+
+### SQLite with Python
+
+- Read about SQLite integration with Python
+- Used Python's built-in `sqlite3` module
+- Connected Python to the existing `practice.db` database
+- Created a database cursor
+- Used `commit()` to save database changes
+- Added error handling with `try/except`
+- Used `finally` to close the database connection safely
+
+### Database Operations
+
+Implemented the following operations in `db_demo.py`:
+
+- `INSERT` — added a test user
+- `UPDATE` — updated the user's city
+- `DELETE` — removed the test user
+- Parameterized `SELECT` query
+- Used `fetchall()` to retrieve query results
+
+### SQL Injection Prevention
+
+- Used parameterized SQL queries with `?` placeholders
+- Passed values separately from SQL statements
+- Avoided building SQL queries through string concatenation
+
+### Pandas Integration
+
+- Installed Pandas
+- Used `pandas.read_sql_query()`
+- Loaded SQLite query results into a Pandas DataFrame
+- Displayed the users table as a DataFrame
+
+### Error Handling
+
+- Added `sqlite3.Error` exception handling
+- Ensured the database connection is closed using `finally`
+
+### LeetCode SQL Practice
+
+Completed:
+- Problem 180 — Consecutive Numbers
+- Problem 626 — Exchange Seats
+
+### Day 10 Files
+
+- `sql/day10/db_demo.py`
+- `sql/day10/practice.db`
+
+## **Day 10 - Completed ✅**
+
+---
+
 
