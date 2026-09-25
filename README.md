@@ -570,4 +570,30 @@ Completed:
 
 ---
 
+## **Day 11 - DBMS Theory + Indexing**
+
+### Database Normalization
+
+- Studied database normalization and the purpose of 1NF, 2NF, and 3NF
+- Created a deliberately messy enrollment dataset
+- Converted the dataset into normalized tables
+- Separated students, courses, enrollments, and instructors
+- Used primary keys, composite keys, and foreign keys
+
+### Database Indexing
+
+- Studied database indexing and how indexes improve data lookup
+- Added an index on `users.city`
+- Added an index on `orders.user_id`
+- Added an index on `orders.product_id`
+
+### Index Benchmark
+
+Tested the following query:
+
+```sql
+SELECT *
+FROM users
+WHERE city = 'Islamabad';
+
 
