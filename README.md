@@ -574,18 +574,18 @@ Completed:
 
 ### Database Normalization
 
-- Studied database normalization and the purpose of 1NF, 2NF, and 3NF
-- Created a deliberately messy enrollment dataset
-- Converted the dataset into normalized tables
-- Separated students, courses, enrollments, and instructors
-- Used primary keys, composite keys, and foreign keys
+* Studied database normalization and the purpose of 1NF, 2NF, and 3NF
+* Created a deliberately messy enrollment dataset
+* Converted the dataset into normalized tables
+* Separated students, courses, enrollments, and instructors
+* Used primary keys, composite keys, and foreign keys
 
 ### Database Indexing
 
-- Studied database indexing and how indexes improve data lookup
-- Added an index on `users.city`
-- Added an index on `orders.user_id`
-- Added an index on `orders.product_id`
+* Studied database indexing and how indexes improve data lookup
+* Added an index on `users.city`
+* Added an index on `orders.user_id`
+* Added an index on `orders.product_id`
 
 ### Index Benchmark
 
@@ -595,5 +595,71 @@ Tested the following query:
 SELECT *
 FROM users
 WHERE city = 'Islamabad';
+```
+
+#### Before Index
+
+The `idx_users_city` index was removed before testing.
+
+`EXPLAIN QUERY PLAN` returned:
+
+```text
+QUERY PLAN
+`--SCAN users
+```
+
+This means SQLite performed a full table scan.
+
+#### After Index
+
+The `idx_users_city` index was created:
+
+```sql
+CREATE INDEX idx_users_city ON users(city);
+```
+
+`EXPLAIN QUERY PLAN` then returned:
+
+```text
+QUERY PLAN
+`--SEARCH users USING INDEX idx_users_city (city=?)
+```
+
+This shows that SQLite used the index to search for matching cities instead of scanning the entire table.
+
+### Benchmark Finding
+
+The query plan changed from:
+
+```text
+SCAN users
+```
+
+to:
+
+```text
+SEARCH users USING INDEX idx_users_city (city=?)
+```
+
+Therefore, the index changed SQLite's query strategy from a full table scan to an indexed search.
+
+Because the practice database contains only a small number of rows, the actual execution-time difference may be very small. The `EXPLAIN QUERY PLAN` output clearly demonstrates how the index changes the way SQLite accesses the data.
+
+### LeetCode SQL Practice
+
+Completed:
+
+* Problem 185 — Department Top Three Salaries
+
+### Day 11 Files
+
+* `sql/day11/normalization.sql`
+* `sql/day11/dbms_notes.md`
+* `sql/day11/practice.db`
+
+## **Day 11 - Completed ✅**
+
+---
+
 
 
