@@ -1,5 +1,6 @@
 # Career Launch
 
+[![Python CI](https://github.com/Noor72353/career-launch/actions/workflows/python-ci.yml/badge.svg)](https://github.com/Noor72353/career-launch/actions/workflows/python-ci.yml)
 [![Python](https://img.shields.io/badge/Python-3.13-blue)](https://www.python.org/)
 [![Tests](https://img.shields.io/badge/Tests-pytest-green)](https://pytest.org/)
 [![Code Style](https://img.shields.io/badge/Code%20Style-Black-black)](https://black.readthedocs.io/)
