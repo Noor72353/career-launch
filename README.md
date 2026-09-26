@@ -709,7 +709,18 @@ Created `cheatsheet.md` containing quick-reference notes for:
 
 The cheat sheet is designed as a quick revision and interview preparation reference based on the concepts practiced throughout Days 1–12.
 
+### Mixed DSA Practice
+
+Completed two Medium-level DSA problems under timed conditions:
+
+- LeetCode 49 — Group Anagrams
+- LeetCode 347 — Top K Frequent Elements
+
+Both problems were attempted with a 25-minute time limit each.
+
 ### **Day 13 - Completed ✅**
 
 ---
+
+
 
