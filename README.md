@@ -681,13 +681,9 @@ Completed:
 
 The complete test suite passed successfully:
 
-```text
 58 passed
+
 
 Day 12 - Completed ✅
 
 ---
-
-
-
-```
